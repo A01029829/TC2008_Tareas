@@ -8,6 +8,19 @@
  */
 
 
+/*
+ * This script renders a 2D smiley face.
+ * The face (yellow circle) orbits around a pivot point and can be translated,
+ * scaled, and rotated through a GUI panel. The eyes and mouth are
+ * drawn as separate shapes, each receiving its own local transformation so they
+ * remain correctly positioned on the face even when it moves or rotates.
+ * The pivot is displayed as a red circle, and all transformations are handled
+ * with 3x3 matrix operations (M3). The scene is continuously redrawn using
+ * requestAnimationFrame. All the shapes reside in a library named A01029829_Shapes,
+ * located inside the "libs" folder :)
+ */
+
+
 'use strict';
 
 import * as twgl from 'twgl-base.js';
